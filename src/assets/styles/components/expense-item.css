@@ -1,0 +1,5 @@
+.expense-item {
+    display: flex;
+    gap: 5px;
+    background-color: var(--color-surface);
+}

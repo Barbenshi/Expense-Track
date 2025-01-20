@@ -1,0 +1,42 @@
+:root {
+    /* Primary Colors */
+    --color-primary: #4CAF50; /* Green */
+    --color-primary-light: #81C784; /* Light Green */
+    --color-primary-dark: #388E3C; /* Dark Green */
+
+    /* Secondary Colors */
+    --color-secondary: #FF9800; /* Orange */
+    --color-secondary-light: #FFB74D; /* Light Orange */
+    --color-secondary-dark: #F57C00; /* Dark Orange */
+
+    /* Neutral Colors */
+    --color-white: #FFFFFF; /* Pure White */
+    --color-black: #000000; /* Pure Black */
+    --color-gray-light: #F5F5F5; /* Light Gray */
+    --color-gray: #9E9E9E; /* Gray */
+    --color-gray-dark: #616161; /* Dark Gray */
+
+    /* Background Colors */
+    --color-background: #FAFAFA; /* Light Background */
+    --color-surface: #FFFFFF; /* Surface Background */
+    --color-overlay: rgba(0, 0, 0, 0.5); /* Overlay (e.g., modals) */
+
+    /* Text Colors */
+    --color-text-primary: #212121; /* Dark Text */
+    --color-text-secondary: #757575; /* Secondary Text */
+    --color-text-on-primary: #FFFFFF; /* Text on Primary Background */
+    --color-text-on-secondary: #FFFFFF; /* Text on Secondary Background */
+
+    /* Accent Colors */
+    --color-accent-blue: #2196F3; /* Blue */
+    --color-accent-red: #F44336; /* Red */
+    --color-accent-yellow: #FFEB3B; /* Yellow */
+    --color-accent-purple: #9C27B0; /* Purple */
+    --color-accent-teal: #009688; /* Teal */
+
+    /* States */
+    --color-success: #4CAF50; /* Success */
+    --color-error: #F44336; /* Error */
+    --color-warning: #FFC107; /* Warning */
+    --color-info: #2196F3; /* Info */
+}

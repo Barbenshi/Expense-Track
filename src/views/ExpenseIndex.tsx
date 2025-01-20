@@ -1,6 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ExpenseList} from '../components/ExpenseList'
-const demoExpenses = [
+import { Expense } from '../types/expense'
+import { AddExpense } from '../components/AddExpense'
+const demoExpenses: Expense[] = [
     {
         id: "1",
         description: 'Rent',
@@ -19,18 +21,31 @@ const demoExpenses = [
         id: "3",
         description: 'Ninja Blender',
         amount: 700,
-        currency: 'NIS',
-        dateCreated: 1719969200
+        currency: 'ILS',
+        dateCreated: 1720019600
     }
 ]
 
 export const ExpenseIndex = () => {
-    const [expenses, setExpenses] = useState(demoExpenses)
+    const [expenses, setExpenses] = useState<Expense[]| null>(null)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setExpenses(demoExpenses)
+        }, 500);
+    }, [])
+
+    const onAddExpense = (expense: Expense) => {
+        console.log('Adding expense...')
+    }
+
+    if (!expenses) return <div>Loading expenses...</div>
 
     return (
         <main className="expense-index">
             <h1>Expense Index</h1>
             <ExpenseList expenses={expenses}/>
+            <AddExpense onAddExpense={onAddExpense} />
         </main>
     )
 }
