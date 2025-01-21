@@ -1,0 +1,23 @@
+[
+    {"_id": "4", "description": "Gaming Console", "amount": 1170.94, "currency": "EUR", "dateCreated": 1715845803},
+    {"_id": "5", "description": "Books", "amount": 1122.72, "currency": "ILS", "dateCreated": 1710575403},
+    {"_id": "6", "description": "Lunch", "amount": 1329.2, "currency": "ILS", "dateCreated": 1723449003},
+    {"_id": "7", "description": "Subscription", "amount": 1577.48, "currency": "EUR", "dateCreated": 1729583403},
+    {"_id": "8", "description": "Gym Membership", "amount": 13.42, "currency": "USD", "dateCreated": 1724485803},
+    {"_id": "9", "description": "Internet", "amount": 567.69, "currency": "USD", "dateCreated": 1710834603},
+    {"_id": "10", "description": "Travel", "amount": 1929.74, "currency": "ILS", "dateCreated": 1712908203},
+    {"_id": "11", "description": "Movie Tickets", "amount": 792.48, "currency": "EUR", "dateCreated": 1722498603},
+    {"_id": "12", "description": "Insurance", "amount": 1708.53, "currency": "ILS", "dateCreated": 1734421803},
+    {"_id": "13", "description": "Headphones", "amount": 116.75, "currency": "USD", "dateCreated": 1727596203},
+    {"_id": "14", "description": "Lunch", "amount": 924.53, "currency": "EUR", "dateCreated": 1717746603},
+    {"_id": "15", "description": "Dining Out", "amount": 408.16, "currency": "ILS", "dateCreated": 1723449003},
+    {"_id": "16", "description": "Internet", "amount": 712.1, "currency": "ILS", "dateCreated": 1722325803},
+    {"_id": "17", "description": "Clothing", "amount": 1681.78, "currency": "ILS", "dateCreated": 1709193003},
+    {"_id": "18", "description": "Gift", "amount": 1703.3, "currency": "ILS", "dateCreated": 1718005803},
+    {"_id": "19", "description": "Books", "amount": 1240.62, "currency": "USD", "dateCreated": 1706601003},
+    {"_id": "20", "description": "Headphones", "amount": 501.24, "currency": "USD", "dateCreated": 1736754603},
+    {"_id": "21", "description": "Clothing", "amount": 251.11, "currency": "USD", "dateCreated": 1736754603},
+    {"_id": "22", "description": "Travel", "amount": 1625.63, "currency": "ILS", "dateCreated": 1707897003},
+    {"_id": "23", "description": "Gym Membership", "amount": 962.93, "currency": "ILS", "dateCreated": 1717401003}
+  ]
+  

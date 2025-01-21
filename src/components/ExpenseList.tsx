@@ -5,7 +5,7 @@ export const ExpenseList = ({ expenses }: { expenses: Expense[] }) => {
 
     return (
         <ul className="expense-list">
-            {expenses.map(expense => <ExpenseItem key={expense.id} expense={expense} />)}
+            {expenses.map(expense => <ExpenseItem key={expense._id} expense={expense} />)}
         </ul>
     )
 }

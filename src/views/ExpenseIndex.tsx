@@ -2,41 +2,30 @@ import { useEffect, useState } from 'react'
 import { ExpenseList} from '../components/ExpenseList'
 import { Expense } from '../types/expense'
 import { AddExpense } from '../components/AddExpense'
-const demoExpenses: Expense[] = [
-    {
-        id: "1",
-        description: 'Rent',
-        amount: 1000,
-        currency: 'USD',
-        dateCreated: 1709251200
-    },
-    {
-        id: "2",
-        description: 'Gelato',
-        amount: 20,
-        currency: 'USD',
-        dateCreated: 1709969200
-    },
-    {
-        id: "3",
-        description: 'Ninja Blender',
-        amount: 700,
-        currency: 'ILS',
-        dateCreated: 1720019600
-    }
-]
+import { expenseService } from '../services/expense.service'
 
 export const ExpenseIndex = () => {
     const [expenses, setExpenses] = useState<Expense[]| null>(null)
 
     useEffect(() => {
-        setTimeout(() => {
-            setExpenses(demoExpenses)
-        }, 500);
+        fetchExpenses()
     }, [])
+    
+    const fetchExpenses = async () => {
+        const expenses: Expense[] = await expenseService.query()
+        setExpenses(expenses)
+    }
 
-    const onAddExpense = (expense: Expense) => {
-        console.log('Adding expense...')
+    const onAddExpense = async (expense: Expense) => {
+        try {
+            const newExpense: Expense = await expenseService.save(expense)
+            setExpenses((prevExpenses: Expense[] | null) => {
+                if (!prevExpenses || !prevExpenses.length) return [newExpense]
+                return [...prevExpenses, newExpense];
+            })
+        } catch (err) {
+            console.log(err)
+        }
     }
 
     if (!expenses) return <div>Loading expenses...</div>
