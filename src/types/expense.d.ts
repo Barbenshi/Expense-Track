@@ -7,3 +7,5 @@ export type Expense = {
 };
 
 export type OnAddExpense = (expense: Expense) => void;
+
+export type OnRemoveExpense = (expenseId: String) => void;

@@ -1,5 +1,25 @@
 .expense-item {
+    position: relative;
     display: flex;
     gap: 5px;
     background-color: var(--color-surface);
+
+    > * {
+        flex: 1 0 0;
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+    }
+
+    .expense-remove {
+        position: absolute;
+        display: none;
+        inset-inline-end: 2em;
+    }
+
+    &:hover {
+        .expense-remove {
+            display: flex;
+        }
+    }
 }

@@ -1,9 +1,9 @@
 import { useMemo } from "react"
-import { Expense } from "../types/expense"
+import { Expense, OnRemoveExpense } from "../types/expense"
 
-export const ExpenseItem = ({ expense }: { expense: Expense }) => {
+export const ExpenseItem = ({ expense, onRemoveExpense }: { expense: Expense, onRemoveExpense: OnRemoveExpense }) => {
 
-    const { amount, currency, description, dateCreated } = expense
+    const { amount, currency, description, dateCreated, _id } = expense
 
     const formattedAmount = useMemo( () => new Intl.NumberFormat('he-IL', {
         style: 'currency',
@@ -26,7 +26,8 @@ export const ExpenseItem = ({ expense }: { expense: Expense }) => {
         <li className="expense-item">
             <span className="expense-name">{ description }</span>
             <span className="expense-amount">{ formattedAmount }</span>
-            <span className="expense-amount">{ formattedDate }</span>
+            <span className="expense-date">{ formattedDate }</span>
+            <button className="expense-remove" onClick={() => onRemoveExpense(_id)}>X</button>
         </li>
     )
 }
