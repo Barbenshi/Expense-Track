@@ -1,8 +1,16 @@
 .expense-item {
     position: relative;
     display: flex;
-    gap: 5px;
-    background-color: var(--color-surface);
+    color: var(--color-gray-light);
+    padding-block: 5px;
+    
+    &:nth-child(even) {
+        background-color: var(--color-accent-teal);
+      }
+      
+    &:nth-child(odd) {
+        background-color: var(--color-gray);
+    }
 
     > * {
         flex: 1 0 0;

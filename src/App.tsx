@@ -1,14 +1,12 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
+import { Aside } from "./components/Aside"
 import { ExpenseIndex } from "./views/ExpenseIndex"
 import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className="flex">
+      <Aside />
       <ExpenseIndex />
-      <Footer />
       <ToastContainer
         position="top-right"
         autoClose={3000}

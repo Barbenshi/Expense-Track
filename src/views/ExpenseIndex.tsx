@@ -50,7 +50,7 @@ export const ExpenseIndex = () => {
 
     return (
         <main className="expense-index">
-            <h1>Expense Index</h1>
+            <h1>Expenses</h1>
             <ExpenseList onRemoveExpense={onRemoveExpense} expenses={expenses}/>
             <AddExpense onAddExpense={onAddExpense} />
         </main>
