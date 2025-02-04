@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     color: var(--color-gray-light);
-    padding-block: 5px;
+    padding: 5px 10px;
     
     &:nth-child(even) {
         background-color: var(--color-accent-teal);

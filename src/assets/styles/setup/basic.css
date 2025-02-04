@@ -31,17 +31,38 @@ h1,h2,h3,h4,h5,h6 {
 
 .flex {
     display: flex;
+
+    &.gap-5 {
+        gap: 5px
+    }
 }
 
 button {
     cursor: pointer;
     border: none;
-    background-color: var(--color-primary-light);
     border-radius: 0.5em;
     padding: 5px 10px;
     transition: background-color 0.3s;
+    
+    
+    &.primary {
+        background-color: var(--color-primary-light);
+        
+        &:hover {
+            background-color: var(--color-primary-dark)
+        }
+    }
+}
 
-    &:hover {
-        background-color: var(--color-primary-dark)
+input {
+    border: 1px solid var(--color-primary-light);
+    border-radius: 0.5em;
+    padding: 5px 10px;
+    font-size: 1rem;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+        border-color: var(--color-primary-dark);
     }
 }

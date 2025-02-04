@@ -27,7 +27,7 @@ export const ExpenseItem = ({ expense, onRemoveExpense }: { expense: Expense, on
             <span className="expense-name">{ description }</span>
             <span className="expense-amount">{ formattedAmount }</span>
             <span className="expense-date">{ formattedDate }</span>
-            <button className="expense-remove" onClick={() => onRemoveExpense(_id)}>X</button>
+            <button className="expense-remove primary" onClick={() => onRemoveExpense(_id)}>X</button>
         </li>
     )
 }

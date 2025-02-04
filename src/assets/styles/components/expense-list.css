@@ -1,11 +1,15 @@
 .expense-list {
     display: flex;
     flex-direction: column;
-    border-radius: 2em;
+    border-radius: 1em;
+    margin-top: 20px;
+    overflow: hidden;
 
     .expense-title {
         font-size: 1.5rem;
         font-weight: bold;
+        background-color: var(--color-gray);
+        padding: 10px;
         
         > * {
             flex: 1;
